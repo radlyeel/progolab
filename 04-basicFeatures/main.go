@@ -6,12 +6,12 @@ import (
 
 func main() { 
     first := 100 
-    second := first 
+    var second *int = &first 
 
     first++ 
 
     fmt.Println("First:", first) 
-    fmt.Println("Second:", second)
+    fmt.Println("Second:", *second)
 
 }
 
