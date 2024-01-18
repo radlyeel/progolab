@@ -6,10 +6,13 @@ import (
 )
 
 func main() { 
-    var intVal = math.MaxInt64 
-    var floatVal = math.MaxFloat64 
-    fmt.Println(intVal * 2) 
-    fmt.Println(floatVal * 2) 
-    fmt.Println(math.IsInf((floatVal * 2), 0))
+    posResult := 3 % 2 
+    negResult := -3 % 2 
+    absResult := math.Abs(float64(negResult)) 
+
+    fmt.Println(posResult) 
+    fmt.Println(negResult) 
+    fmt.Println(absResult)
+
 }
 
