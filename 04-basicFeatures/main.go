@@ -2,13 +2,12 @@ package main
 
 import ( 
     "fmt" 
-    "math/rand" 
+    //"math/rand" 
 ) 
 
 func main() { 
-    // Note that the current (2024-01-18) rand() defaults
-    // To a random-seeded behavior
-    fmt.Println("Random value: ", rand.Int()) 
-    
+    const price float32 = 275.00 
+    const tax float32 = 27.50 
+    fmt.Println(price + tax)
 }
 
