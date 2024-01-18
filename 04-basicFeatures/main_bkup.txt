@@ -1,0 +1,62 @@
+package main 
+
+import ( 
+    "fmt" 
+    "math/rand" 
+) 
+
+func main() { 
+    // Note that the current (2024-01-18) rand() defaults
+    // To a random-seeded behavior
+    fmt.Println("Random value: ", rand.Int()) 
+    
+    /*
+    // Listing 4-6
+    fmt.Println("Hello, Go") 
+    fmt.Println(20 + 20) 
+    fmt.Println(20 + 30)
+    
+    // Listing 4-7
+     const price float32 = 275.00 
+    const tax float32 = 27.50 
+    fmt.Println(price + tax)
+    
+    // Listing 4-8
+    const price float32 = 275.00 
+    const tax float32 = 27.50 
+    fmt.Println(price + tax)
+
+    // Listing 4-9
+    const quantity = 2
+    fmt.Println(quantity * (price + tax) )
+
+    // Understanding iota
+    const  (
+        Watersports = iota 
+        Soccer 
+        Chess 
+    )
+    fmt.Println( Watersports, Soccer, Chess )
+
+    // Listing 4-10
+    const price, tax float32 = 275, 27.50 
+    const quantity, inStock = 2, true 
+    fmt.Println("Total:", quantity * (price + tax)) 
+    fmt.Println("In stock: ", inStock)
+
+    // Listing 4-11
+    const price, tax float32 = 275, 27.50 
+    const quantity, inStock = 2, true 
+    fmt.Println("Total:", 2 * quantity * (price + tax)) 
+    fmt.Println("In stock: ", inStock)
+
+    */
+
+    // Listing 4-12
+    var price float32 = 275.00 
+    var tax float32 = 27.50 
+    fmt.Println(price + tax) 
+    price = 300 
+    fmt.Println(price + tax) 
+}
+
