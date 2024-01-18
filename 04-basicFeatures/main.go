@@ -6,9 +6,10 @@ import (
 ) 
 
 func main() { 
-    const price, tax float32 = 275, 27.50 
-    const quantity, inStock = 2, true 
-    fmt.Println("Total:", 2 * quantity * (price + tax)) 
-    fmt.Println("In stock: ", inStock)
+    var price float32 = 275.00 
+    var tax float32 = 27.50 
+    fmt.Println(price + tax) 
+    price = 300 
+    fmt.Println(price + tax)
 }
 
