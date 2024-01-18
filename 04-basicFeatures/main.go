@@ -2,12 +2,16 @@ package main
 
 import ( 
     "fmt" 
-    //"math/rand" 
 ) 
 
 func main() { 
-    price := 275.00 
-    fmt.Println(price)
+    first := 100 
+    second := first 
+
+    first++ 
+
+    fmt.Println("First:", first) 
+    fmt.Println("Second:", second)
 
 }
 
