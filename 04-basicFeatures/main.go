@@ -6,10 +6,9 @@ import (
 ) 
 
 func main() { 
-    var price = 275.00 
-    var price2 = price 
-    fmt.Println(price) 
-    fmt.Println(price2)
-
+    var price, tax float64 
+    price = 275.00 
+    tax = 27.50 
+    fmt.Println(price + tax)
 }
 
