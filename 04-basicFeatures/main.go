@@ -2,16 +2,15 @@ package main
 
 import ( 
     "fmt" 
+    "sort"
 ) 
 
 func main() { 
-    first := 100 
-    var second *int = &first 
-
-    first++ 
-
-    fmt.Println("First:", first) 
-    fmt.Println("Second:", *second)
+    names := [3]string {"Alice", "Charlie", "Bob"} 
+    secondPosition := &names[1] 
+    fmt.Println(*secondPosition) 
+    sort.Strings(names[:]) 
+    fmt.Println(*secondPosition)
 
 }
 
